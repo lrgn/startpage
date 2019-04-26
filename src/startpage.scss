@@ -1,0 +1,44 @@
+/*
+ * Bootstrap
+ */
+
+// Required
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+// Optional
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/navbar";
+
+
+/*
+ * TypoPRO
+ */
+
+@import '~typopro-web/web/TypoPRO-Ubuntu/TypoPRO-UbuntuMono-Regular.css';
+
+
+/*
+ * Startpage's styles
+ */
+
+html { font-size: 12px }
+body { font-family: 'TypoPRO Ubuntu Mono', monospace; color: #FF9900; background-color: #330000; text-shadow: 0 0 5px #FF9900, 0 0 10px #FF9900 }
+.ascii { text-align:center; white-space: pre; font-size: 0.5rem; line-height: 0.5rem; text-shadow: 0 0 5px #FF9900, 0 0 10px #FF9900 }
+
+.box { border: 1px dashed #FF9900; padding: 1rem 0.5rem; margin-bottom: 1rem }
+.box-title { width: max-content; margin-top: -1.75rem; margin-bottom: 0.25rem; background-color: #330000}
+.box-title:before { content:"[ " }
+.box-title:after { content:" ]" }
+
+a { color: #FF9900; text-decoration: underline dashed }
+a:hover { color: #FF9900; text-decoration: underline solid }
+			
+.links, .links a { color: #330000; background-color: #FF9900; text-decoration: none }
+.links a:hover { text-decoration: none }
+			
+.navbar { background-color: #FF9900; padding-bottom: 1px; padding-top: 0; box-shadow: 0 0 15px #FF9900 }
+.navbar a { color: #330000; text-decoration: none;  }
+.navbar a:hover { background-color: #330000; color: #FF9900; }
