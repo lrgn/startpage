@@ -3,14 +3,14 @@ function YuzuRSSClient(host, port) {
 	this.port = port;
 }
 
-YuzuRSSClient.prototype.fetch = function (urls, callback) {
+YuzuRSSClient.prototype.fetch = function (urls, limit, callback) {
 	if (typeof urls === 'string') {
 		urls = [urls];
 	} else if (!Array.isArray(urls) || !urls.length) {
 		return this;
 	}
 
-	var body = { urls: urls, limit: 12 };
+	var body = { urls: urls, limit: limit };
 	this.postJSON(this.buildQueryURL(), body, this.onData(callback));
 
 	return this;
